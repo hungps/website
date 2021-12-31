@@ -1,12 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { HelmetProvider } from 'react-helmet-async'
 
 import reportWebVitals from './reportWebVitals'
-import { HomePage } from './pages/Home/Loadable'
+import { App } from './pages/App'
 
 ReactDOM.render(
   <React.StrictMode>
-    <HomePage />
+    <HelmetProvider>
+      <App />
+    </HelmetProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 )
