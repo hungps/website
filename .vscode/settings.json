@@ -1,0 +1,22 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.format.enable": true,
+  "prettier.ignorePath": ".eslintignore",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.exclude": {
+    "**/.gitkeep": true
+  },
+  "jest.jestCommandLine": "yarn test",
+  "jest.showCoverageOnLoad": true,
+  "jest.coverageFormatter": "GutterFormatter",
+  "jest.debugCodeLens.showWhenTestStateIn": ["pass", "fail", "unknown"],
+  "jest.autoRun": {
+    "watch": false,
+    "onSave": "test-src-file",
+    "onStartup": ["all-tests"]
+  }
+}
