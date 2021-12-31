@@ -1,0 +1,13 @@
+node_modules
+build
+coverage
+internals
+
+# Ignore all CRA template files (for easily update)
+src/utils/@reduxjs
+src/utils/types/injector-typings.ts
+src/utils/loadable.tsx
+src/utils/messages.ts
+src/utils/redux-injectors.ts
+src/reportWebVitals.ts
+src/styles/media.ts
